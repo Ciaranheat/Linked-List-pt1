@@ -3,13 +3,13 @@
 
 using namespace std;
 
-Node :: Node(Student* newstn) {
-  stn = newstn;
+Node :: Node(Student* newsdt) {
+  sdt = newsdt;
   next = NULL;
 }
 
 Node :: ~Node() {
-  delete stn;
+  delete sdt;
 }
 
 void Node :: setNext(Node* newNode) {
@@ -21,5 +21,5 @@ Node* Node :: getNext() {
 }
 
 Student* Node :: getStudent() {
-  return stn;
+  return sdt;
 }
